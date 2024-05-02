@@ -1,14 +1,13 @@
 <!-- The header of the website. -->
-<?php include("../inc/access_control.php"); ?>
 <header>
     <div id='heading-text'>
         <h1>TradeBee</h1>
     </div>
     <nav>
         <?php if (session_status() == PHP_SESSION_NONE) session_start() ?>
-        <?php if(isset($_SESSION['if_username'])): ?>
+        <?php if(isset($_SESSION['uid'])): ?>
             <div id='user-box' style='text-align: center;'>
-                Logged In As: <br> <b><?php echo $_SESSION["if_username"] ?></b>
+                Logged In As: <br> <b><?php echo $_SESSION["uid"] ?></b>
             </div>
             <a href="../home/index.php">Home</a>
             <a href="../login/logout.php">Logout</a>

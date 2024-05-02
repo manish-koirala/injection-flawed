@@ -50,7 +50,6 @@ main a {
     gap: 1.5rem;
     flex-wrap: wrap;
     justify-content: center;
-    align-items: center;
 }
 .offer {
     display: flex;
@@ -59,6 +58,8 @@ main a {
     flex-flow: column nowrap;
     gap: 0.5rem;
     border-radius: 1rem;
+    justify-content: space-between;
+    width: 250px;
 }
 
 .buy-btn a {

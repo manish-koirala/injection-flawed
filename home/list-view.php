@@ -23,7 +23,7 @@ $categoriesResult = $db->query($categoriesQuery);
 $welcomeMessage = "";
 
 // See if the user has a tracking id.
-if (isset($_COOKIE["tracking-id"])) {
+if (isset($_COOKIE["tracking-id"]) && isset($_COOKIE["uid"])) {
     // Check the database if the tracking-id is correct.
     $tracking_id = $_COOKIE["tracking-id"];
     $checkTrackingID = "SELECT * FROM tracking WHERE tracking_id=\"$tracking_id\"";
