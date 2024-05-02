@@ -1,0 +1,53 @@
+/* Styles that apply to all pages of the website. */
+
+/* CSS RESET */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    line-height: 1.5;
+}
+
+/* Main Styles */
+main {
+    min-height: 80vh;
+}
+
+/* Anchor Styles */
+a {
+    color: skyblue;
+    font-style: italic;
+}
+a:hover {
+    color: lightcoral;
+}
+
+/* Header Styles */
+header {
+    background-color: rgb(40, 40, 40);
+    color: white;
+    display: flex;
+    padding: 1.5rem;
+    justify-content: space-between;
+    font-size: 1.25rem;
+}
+header a {
+    display: block;
+    margin: 0 1.5rem;
+}
+header nav{
+    display: flex;
+}
+
+
+
+/* Footer Styles */
+footer {
+    background-color: rgb(40, 40, 40);
+    color: white;
+    font-size: 1.25rem;
+    text-align: center;
+    padding: 2rem;
+}
+

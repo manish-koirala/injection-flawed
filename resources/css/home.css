@@ -1,0 +1,168 @@
+main {
+    padding: 2.5rem;
+}
+.categories-nav{
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+.categories-nav a{
+    text-decoration: none;
+    display: block;
+    margin: 0rem 0.5rem;
+    padding: 0.5rem;
+    border: 1px solid darkslategray;
+}
+.main-body {
+    display: flex;
+    gap: 1rem;
+    font-size: 1.5rem;
+    min-height: 80vh;
+    margin-top: 0.5rem;
+}
+
+main a {
+    color: darkslategray;
+}
+
+.create-offer a{
+    display: block;
+    text-align: center;
+    padding: 0.8rem;
+    text-decoration: none;
+    margin: 1rem;
+    font-size: 2rem;
+    color: white;
+    background-color: rgb(29, 29, 29);
+    border-radius: 1rem;
+}
+.create-offer a:hover{
+    color: white;
+    background-color: darkslategray;
+}
+
+.offers {
+    flex: 3;
+    background-color: lightgray;
+    padding: 1rem;
+    border-radius: 1rem;
+    display: flex;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.offer {
+    display: flex;
+    padding: 1.5rem;
+    background-color: whitesmoke;
+    flex-flow: column nowrap;
+    gap: 0.5rem;
+    border-radius: 1rem;
+}
+
+.buy-btn a {
+    display: block;
+    text-decoration: none;
+    width: 100%;
+    text-align: center;
+    font-style: normal;
+    border-radius: 1.2rem;
+    padding: 0.5rem;
+    background-color: rgb(29, 29, 29);
+    color: white;
+}
+.sold-out {
+    width: 100%;
+    margin: 0.5rem;
+    padding: 0.5rem;
+    color: darkslategray;
+    background-color: rgb(202, 202, 202);
+    border-radius: 1rem;
+    text-align: center;
+}
+.buy-btn a:hover {
+    background-color: darkslategray;
+    color: white;
+}
+.offer-name {
+    font-size: 2rem;
+    text-align: center;
+    color: darkslategray;
+    margin-bottom: 1rem;
+}
+.offer-price {
+    text-align: center;
+}
+.sidebar {
+    background-color: lightgray;
+    flex: 1;
+    border-radius: 1rem;
+    padding: 1rem 2rem;
+    display: flex;
+    flex-flow: column nowrap;
+}
+.bought-list > h2, .sold-list > h2 {
+    text-decoration: underline;
+}
+
+.offer-detailed-box {
+    display: flex;
+    gap: 2rem;
+    background-color: lightgray;
+    padding: 2rem;
+    border-radius: 1.5rem;
+    width: max-content;
+    margin: auto;
+}
+.offer-detailed-box > div {
+    padding: 1.5rem;
+    background-color: whitesmoke;
+}
+.offer-detailed-right {
+    display: flex;
+    flex-flow: column nowrap;
+}
+.offer-detailed-right > h1 {
+    font-size: 2.5rem;
+    text-align: center;
+    color: slategray;
+    margin: 0.5rem;
+}
+.offer-detailed-right > h2 {
+    font-size: 1.8rem;
+    color: darkslategray;
+}
+.offer-detailed-right form input[type="submit"] {
+    display: block;
+    width: 100%;
+    font-size: 1.5rem;
+    padding: 0.5rem;
+    margin: 1rem auto;
+    background-color: rgb(29, 29, 29);
+    color: white;
+    border-radius: 1rem;
+    border: none;
+}
+.offer-detailed-right form input[type="submit"]:hover {
+    background-color: darkslategray;
+}
+.offer-detailed-desc {
+    background-color: lightgray;
+    padding: 0.8rem;
+    margin: 0.5rem;
+}
+
+
+.offer-img {
+    display: block;
+    width: 100%;
+    padding: 0.5rem;
+}
+.welcome-message {
+    text-align: right;
+    padding: 0.5rem;
+    color: rgb(45, 45, 45);
+    font-size: 1.3rem;
+    font-weight: bold;
+}

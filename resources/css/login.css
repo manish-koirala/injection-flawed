@@ -1,0 +1,33 @@
+/* CSS For the login form. */
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+form {
+    padding: 2rem;
+    border: 2px solid black;
+    border-radius: 1rem;
+    font-size: 1.5rem;
+}
+
+form input {
+    display: block;
+    width: 100%;
+    margin: 1rem 0;
+    font-size: 1.5rem;
+    padding: 0.5rem;
+}
+
+input[type="submit"] {
+    background-color: rgb(47, 47, 47);
+    color: white;
+    border: none;
+    border-radius: 1rem;
+    margin-top: 2rem;
+}
+input[type="submit"]:hover {
+    background-color: rgb(85, 85, 85);
+    color: whitesmoke;
+}
