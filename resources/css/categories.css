@@ -17,7 +17,6 @@ main {
     gap: 1.5rem;
     flex-wrap: wrap;
     justify-content: center;
-    align-items: center;
     margin: 1.5rem;
 }
 .offer {
@@ -27,6 +26,11 @@ main {
     flex-flow: column nowrap;
     gap: 0.5rem;
     border-radius: 1rem;
+    justify-content: space-between;
+    width: 250px;
+}
+.offer img {
+    max-width: 200px;
 }
 .buy-btn a {
     display: block;

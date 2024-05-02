@@ -61,6 +61,9 @@ main a {
     justify-content: space-between;
     width: 250px;
 }
+.offer img {
+    max-width: 200px;
+}
 
 .buy-btn a {
     display: block;
@@ -115,6 +118,9 @@ main a {
     border-radius: 1.5rem;
     width: max-content;
     margin: auto;
+}
+.offer-detailed-left img {
+    max-width: 500px;
 }
 .offer-detailed-box > div {
     padding: 1.5rem;
