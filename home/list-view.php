@@ -23,21 +23,23 @@ $categoriesResult = $db->query($categoriesQuery);
 $welcomeMessage = "";
 
 // See if the user has a tracking id.
-if (isset($_COOKIE["tracking-id"]) && isset($_COOKIE["uid"])) {
-    // Check the database if the tracking-id is correct.
-    $tracking_id = $_COOKIE["tracking-id"];
-    $checkTrackingID = "SELECT * FROM tracking WHERE tracking_id=\"$tracking_id\"";
-    if ($db->query($checkTrackingID)->num_rows) {
-        $welcomeMessage = "Welcome Back!";
-    }
-} else {
-    // Generate a new tracking id cookie in the database and set the cookie for the user.
-    $tracking_id = substr(base64_encode(sha1(mt_rand())), 0, 10);
-    $insertTrackingId = "INSERT INTO tracking (tracking_id) VALUES (\"$tracking_id\")";
-    $db->query($insertTrackingId);
+if (isset($_SESSION["uid"])) {
+    if (isset($_COOKIE["tracking-id"])) {
+        // Check the database if the tracking-id is correct.
+        $tracking_id = $_COOKIE["tracking-id"];
+        $checkTrackingID = "SELECT * FROM tracking WHERE tracking_id=\"$tracking_id\"";
+        if ($db->query($checkTrackingID)->num_rows) {
+            $welcomeMessage = "Welcome Back!";
+        }
+    } else {
+        // Generate a new tracking id cookie in the database and set the cookie for the user.
+        $tracking_id = substr(base64_encode(sha1(mt_rand())), 0, 10);
+        $insertTrackingId = "INSERT INTO tracking (tracking_id) VALUES (\"$tracking_id\")";
+        $db->query($insertTrackingId);
 
-    // Set the cookie for tracking id.
-    setcookie("tracking-id", $tracking_id, time()+86400);
+        // Set the cookie for tracking id.
+        setcookie("tracking-id", $tracking_id, time()+86400);
+    }
 }
 ?>
 <?php if($welcomeMessage != ""): ?>
