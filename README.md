@@ -18,6 +18,7 @@ This is a simple web application for trading products that has intentional SQL i
 * Install phpmyadmin
 * Start the apache and mysql services.
 * Go to localhost/phpmyadmin, create a database called 'sql-injection' amd import data.db file into the database. (The data.db file is located at database/data.db)
+* Copy the files into var/www/
 * Go to localhost to visit the web application.
 
 ## Screenshots
